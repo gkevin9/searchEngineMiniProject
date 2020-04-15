@@ -1,6 +1,23 @@
-{% extends 'base.html' %} {% block head %} {% endblock %} {% block body %}
-<form action="POST">
-  <input type="text" name="search" />
-  <input type="submit" />
-</form>
+{% extends 'base.html' %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/index.css') }}"
+/>
+<link
+  href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
+{% endblock %} {% block body %}
+<div class="wrap">
+  <div class="search">
+    <input
+      type="text"
+      class="searchTerm"
+      placeholder="What are you looking for?"
+    />
+    <button type="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</div>
 {% endblock %}
