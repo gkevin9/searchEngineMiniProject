@@ -8,16 +8,12 @@
   rel="stylesheet"
 />
 {% endblock %} {% block body %}
-<div class="wrap">
-  <div class="search">
-    <input
-      type="text"
-      class="searchTerm"
-      placeholder="What are you looking for?"
-    />
-    <button type="submit" class="searchButton">
+<div class="box">
+  <form action="#" method="post">
+    <input type="text" name="search" placeholder="What are you looking for?" />
+    <button type="submit">
       <i class="fa fa-search"></i>
     </button>
-  </div>
+  </form>
 </div>
 {% endblock %}

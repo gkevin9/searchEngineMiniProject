@@ -1,3 +1,22 @@
-{% extends 'base.html' %} {% block head %} {% endblock %} {% block body %}
-<h1>{{respon}}</h1>
+{% extends 'base.html' %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/respond.css') }}"
+/>
+<link
+  href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
+{% endblock %} {% block body %}
+<div class="box">
+  <form action="#" method="post">
+    <input type="text" name="search" placeholder="What are you looking for?" />
+    <button type="submit">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+</div>
+<div class="content">
+  <h1>{{ respon }}</h1>
+</div>
 {% endblock %}
