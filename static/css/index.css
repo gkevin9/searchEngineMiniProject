@@ -20,11 +20,18 @@ form {
 
 input[type="text"] {
   background-color: #ffffff;
-  width: 340px;
   height: 50px;
   border: none;
   outline: none;
   padding: 0 25px;
+}
+
+#search {
+  width: 340px;
+}
+
+#res {
+  width: 50px;
 }
 
 button {
