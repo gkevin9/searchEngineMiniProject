@@ -20,6 +20,8 @@
   </form>
 </div>
 <div class="content">
-  <h1>{{ respon }}</h1>
+  {%for i in range(0, res)%}
+    <li>{{respon[i]}}</li>
+  {%endfor%}
 </div>
 {% endblock %}
