@@ -44,3 +44,7 @@ button {
 .content {
   position: relative;
 }
+
+ul.content {
+  list-style-type: none;
+}

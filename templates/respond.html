@@ -20,9 +20,8 @@
   </form>
 </div>
 <div class="content">
-  {% for i in title %}
-    <link>{{ title }}</link>
-    <!-- <p>{{ date }}</p> -->
+  {% for i in range(0, leng) %}
+    <ul><li><h3>{{ title[i] }}</h3><p>{{ date[i] }}</p></li></ul>
   {% endfor %}
 </div>
 {% endblock %}
