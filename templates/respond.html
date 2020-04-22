@@ -11,15 +11,16 @@
 <div class="box">
   <form action="#" method="post">
     <input id="search" type="text" name="search" placeholder="What are you looking for?" />
-    <input id="res" type="text" name="res" placeholder="Show the top ... result" />
+    <input id="res" type="text" name="res" placeholder="Top..." />
     <button type="submit">
       <i class="fa fa-search"></i>
     </button>
-    <input type="radio" name="met" id="option1" value="Probabilistik"> Probabilistik </input>
-    <input type="radio" name="met" id="option2" value="tf-idf"> TF-IDF </input>
+    <input type="radio" name="met" id="option1" value="1"> Probabilistik </input>
+    <input type="radio" name="met" id="option2" value="2"> TF-IDF </input>
   </form>
 </div>
 <div class="content">
+  <p>Processing time {{ time }}</p>
   {% for i in range(0, leng) %}
     <ul><li><h3>{{ title[i] }}</h3><p>{{ score[i] }}</p><p>{{ date[i] }}</p></li></ul>
   {% endfor %}
