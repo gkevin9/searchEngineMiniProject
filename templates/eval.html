@@ -21,8 +21,6 @@
 </div>
 <div class="content">
   <p>Processing time {{ time }}</p>
-  <p>Recall {{ recal }}</p>
-  <p>Precision {{ precision }}</p>
   {% for i in range(0, leng) %}
     <ul><li><h3>{{ title[i] }}</h3><p>{{ score[i] }}</p><p>{{ date[i] }}</p></li></ul>
   {% endfor %}
