@@ -10,8 +10,8 @@
 {% endblock %} {% block body %}
 <div class="box">
   <form action="#" method="post">
-    <input id="search" type="text" name="search" placeholder="What are you looking for?" />
-    <input id="res" type="text" name="res" placeholder="Top..." />
+    <input id="search" type="text" name="search" placeholder={{search}} />
+    <input id="res" type="text" name="res" placeholder="Top {{top}}" />
     <button type="submit">
       <i class="fa fa-search"></i>
     </button>
@@ -21,9 +21,9 @@
 </div>
 <div class="content">
   <p>Processing time : {{ time }}</p>
-  <p>Jumlah dokumen yang ditemukan : {{ doc }}</p>
+  <p>Jumlah dokumen yang ditemukan : {{ docnum }}</p>
   {% for i in range(0, leng) %}
-    <ul><li><h3>{{ title[i] }} - {{doc[i]}}</h3><p>{{ score[i] }}</p><p>{{ date[i] }}</p><p>{{ body[i] }}</p></li></ul>
+    <ul><li><h3>{{ title[i] }}, Document no: {{doc[i]}}</h3><p>Score : {{ score[i] }}</p><p>Date: {{ date[i] }}</p><p>{{ body[i] }}</p></li></ul>
   {% endfor %}
 </div>
 {% endblock %}
